@@ -1,0 +1,17 @@
+{
+  "homeTitle": "58 同城首页",
+  "welcome": "欢迎来到 58 同城",
+  "housing": "海量房源，任您挑选",
+  "jobs": "优质工作，职等你来",
+  "secondHand": "二手好物，实惠交易",
+  "localLife": "本地生活，精彩无限",
+  "login": "登录",
+  "register": "注册",
+  "searchPlaceholder": "搜索职位、房产等",
+  "navItems": {
+    "housing": "房产",
+    "recruitment": "招聘",
+    "usedCars": "二手车",
+    "secondHandMarket": "二手市场"
+  }
+}

@@ -1,0 +1,107 @@
+
+"use client";
+import Link from 'next/link';
+import { useState } from 'react';
+import MobileMenu from './components/MobileMenu';
+
+const Header: React.FC = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+
+   const navItems = ['房产', '招聘', '二手车', '二手市场'];
+  return (
+    <header className="bg-white shadow-md">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center py-4">
+          {/* Logo */}
+          <div className="flex items-center">
+            <Link href="/" className="text-xl font-bold text-[#FF5A5F]">
+              易京科技交易网
+            </Link>
+          </div>
+
+          {/* Mobile Menu Toggle Button */}
+          <div className="md:hidden">
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="text-gray-700 focus:outline-none"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
+
+          {/* Desktop Navigation */}
+          <nav className="hidden md:block">
+            <ul className="flex space-x-6">
+              {navItems.map((item, index) => (
+                <li key={index}>
+                  <Link href="#" className="text-gray-700 hover:text-[#FF5A5F]">
+                    {item}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          {/* Desktop Search Bar */}
+          <div className="hidden md:block relative w-1/3">
+            <input
+              type="text"
+              placeholder='搜索职位、房产等'
+              className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:border-[#FF5A5F] focus:ring-1 focus:ring-[#FF5A5F]"
+            />
+            <div className="absolute left-3 top-1/2 transform -translate-y-1/2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5 text-gray-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
+              </svg>
+            </div>
+          </div>
+
+          {/* Desktop Login and Register Buttons */}
+          <div className=" md:flex hidden space-x-4 text-center items-center">
+            <Link
+              href="/"
+              className="text-gray-700 py-2 px-4 rounded-full  hover:text-white  hover:bg-[#FF5A5F] font-medium"
+            >
+              登录
+            </Link>
+            <Link
+              href="/"
+              className=" bg-amber-200 text-[#000] px-4 py-2 rounded-full hover:text-white  hover:bg-[#e6494d] font-medium"
+            >
+             注册
+            </Link>
+          </div>
+        </div>
+      </div>
+      <MobileMenu isMobileMenuOpen={isMobileMenuOpen} />
+      {/* Mobile Menu */}
+    </header>
+  );
+};
+
+export default Header;
