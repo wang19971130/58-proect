@@ -7,7 +7,6 @@ import MobileMenu from './components/MobileMenu';
 const Header: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-
    const navItems = ['房产', '招聘', '二手车', '二手市场'];
   return (
     <header className="bg-white shadow-md">
@@ -80,7 +79,6 @@ const Header: React.FC = () => {
               </svg>
             </div>
           </div>
-
           {/* Desktop Login and Register Buttons */}
           <div className=" md:flex hidden space-x-4 text-center items-center">
             <Link

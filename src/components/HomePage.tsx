@@ -1,7 +1,10 @@
+"use client";
 import React from 'react';
-import { homePageData } from '../data/homePageData';
+import { observer } from 'mobx-react-lite';
+import { homePageData } from '../store/homePageData';
+import counterStore from '../store/counterStore';
 
-const HomePage: React.FC = () => {
+const HomePage: React.FC =observer(() => {
   return (
     <div className="min-h-auto bg-gray-100 p-4">
       <div className="max-w-7xl mx-auto">
@@ -12,13 +15,13 @@ const HomePage: React.FC = () => {
               key={item.id}
               className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow"
             >
-              <p className="text-lg text-gray-800">{item.text}</p>
+              <p className="text-lg text-gray-800" onClick={counterStore?.increment}>{item.text}{counterStore.count}</p>
             </div>
           ))}
         </div>
       </div>
     </div>
   );
-};
+});
 
 export default HomePage;
