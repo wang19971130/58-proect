@@ -3,22 +3,30 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import MobileMenu from './components/MobileMenu';
+import { useTranslations } from 'next-intl';
+import Switcher from './components/Switcher';
 
 const Header: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+   const t = useTranslations('HomePage');
+   const n = useTranslations('navItems');
 
-   const navItems = ['房产', '招聘', '二手车', '二手市场'];
+   const navItems = [ n('housing'), n('recruitment'), n('usedCars'),n('secondHandMarket')];
   return (
     <header className="bg-white shadow-md">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-4">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-2">
+        <div className="flex  justify-between items-center py-4">
+           {/* 语言切换组件 */}
+           <div className=" md:block hidden  mr-2 ">
+            <Switcher />
+          </div>
           {/* Logo */}
-          <div className="flex items-center">
+          <div className=" w-auto whitespace-nowrap flex items-center">
             <Link href="/" className="text-xl font-bold text-[#FF5A5F]">
-              易京科技交易网
+              {t('homeTitle')}
             </Link>
           </div>
-
+      
           {/* Mobile Menu Toggle Button */}
           <div className="md:hidden">
             <button

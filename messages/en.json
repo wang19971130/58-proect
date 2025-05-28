@@ -1,0 +1,35 @@
+{
+  "HomePage": {
+    "title": "Hello world!",
+    "about": "Go to the about page",
+    "homeTitle": "yijing Home",
+    "welcome": "Welcome to 58 Tongcheng",
+    "housing": "A vast selection of housing for you to choose from",
+    "jobs": "High-quality jobs await you",
+    "secondHand": "Second-hand goods, great deals",
+    "localLife": "Local life, full of excitement",
+    "login": "Login",
+    "register": "Register",
+    "searchPlaceholder": "Search for jobs, properties, etc."
+  },
+  "navItems": {
+    "housing": "Housing",
+    "recruitment": "Recruit",
+    "usedCars": "Used Cars",
+    "secondHandMarket": "2HM"
+  },
+  "setings":{
+    "language":"Language",
+    "theme":"Theme",
+    "dark":"Dark",
+    "light":"Light",
+    "system":"System",
+    "logout":"Logout",
+    "login":"Login",
+    "register":"Register",
+    "search":"Search",
+    "home":"Home",
+    "about":"About"
+}
+  
+}
