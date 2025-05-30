@@ -2,7 +2,7 @@
   "HomePage": {
     "title": "你好",
     "about": "前往我的页面",
-    "homeTitle": "欢迎来到易京科技购物网",
+    "homeTitle": "易京二手交易网",
     "welcome": "欢迎来到 58 同城",
     "housing": "海量房源，任您挑选",
     "jobs": "优质工作，职等你来",
@@ -10,7 +10,10 @@
     "localLife": "本地生活，精彩无限",
     "login": "登录",
     "register": "注册",
-    "searchPlaceholder": "搜索职位、房产等"
+    "searchPlaceholder": "搜索职位、房产等",
+    "searchButton": "搜索",
+    "searchHousing": "搜索房产",
+     "yijin": "易京二手交易网"
   },
   "navItems": {
     "housing": "房产",
@@ -30,5 +33,6 @@
     "search":"搜索",
     "home":"首页",
     "about":"关于"
+
   }
 }

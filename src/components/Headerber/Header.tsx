@@ -67,7 +67,7 @@ const Header: React.FC = () => {
           <div className="hidden md:block relative w-1/3">
             <input
               type="text"
-              placeholder='搜索职位、房产等'
+              placeholder={t('searchHousing')}
               className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:border-[#FF5A5F] focus:ring-1 focus:ring-[#FF5A5F]"
             />
             <div className="absolute left-3 top-1/2 transform -translate-y-1/2">
@@ -93,13 +93,13 @@ const Header: React.FC = () => {
               href="/"
               className="text-gray-700 py-2 px-4 rounded-full  hover:text-white  hover:bg-[#FF5A5F] font-medium"
             >
-              登录
+              {t('login')}
             </Link>
             <Link
               href="/"
-              className=" bg-amber-200 text-[#000] px-4 py-2 rounded-full hover:text-white  hover:bg-[#e6494d] font-medium"
+              className=" bg-amber-200   text-[#000] px-4 py-2 rounded-full hover:text-white  hover:bg-[#e6494d] font-medium"
             >
-             注册
+            {t('register')}
             </Link>
           </div>
         </div>

@@ -2,7 +2,7 @@
   "HomePage": {
     "title": "Hello world!",
     "about": "Go to the about page",
-    "homeTitle": "yijing Home",
+    "homeTitle": "yingjing.com",
     "welcome": "Welcome to 58 Tongcheng",
     "housing": "A vast selection of housing for you to choose from",
     "jobs": "High-quality jobs await you",
@@ -10,7 +10,10 @@
     "localLife": "Local life, full of excitement",
     "login": "Login",
     "register": "Register",
-    "searchPlaceholder": "Search for jobs, properties, etc."
+    "searchPlaceholder": "Search for jobs, properties, etc.",
+    "searchButton": "Search",
+    "searchHousing": "Search housing",
+    "yijin": "Yijin perfect home"
   },
   "navItems": {
     "housing": "Housing",
